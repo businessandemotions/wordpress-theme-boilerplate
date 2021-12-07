@@ -1,0 +1,73 @@
+{
+    "name": "boilerplate",
+    "version": "1.0.0",
+    "description": "boilerplate",
+    "main": "dist/index.js",
+    "scripts": {
+        "boilerplate": "echo \"Error: no boilerplate specified\" && exit 1",
+        "start": "NODE_ENV=development webpack --watch",
+        "build": "webpack",
+        "build:dev": "NODE_ENV=development webpack"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/businessandemotions/artclinic.git"
+    },
+    "author": "oscar@businessandemotions.se",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/businessandemotions/artclinic/issues"
+    },
+    "homepage": "https://github.com/businessandemotions/artclinic#readme",
+    "babel": {
+        "presets": [
+            [
+                "@babel/preset-env",
+                {
+                    "useBuiltIns": "entry",
+                    "corejs": "3.6"
+                }
+            ]
+        ],
+        "plugins": [
+            "@babel/plugin-proposal-class-properties",
+            "@babel/plugin-transform-classes",
+            "@babel/plugin-transform-object-assign",
+            "@babel/plugin-proposal-optional-chaining"
+        ]
+    },
+    "peerDependencies": {
+        "jquery": "^3.5.1"
+    },
+    "dependencies": {
+        "classlist-polyfill": "^1.2.0",
+        "core-js": "^3.6.5"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.11.5",
+        "@babel/plugin-proposal-class-properties": "^7.10.4",
+        "@babel/plugin-proposal-optional-chaining": "^7.11.0",
+        "@babel/plugin-transform-classes": "^7.12.1",
+        "@babel/plugin-transform-object-assign": "^7.10.4",
+        "@babel/preset-env": "^7.11.5",
+        "@wordpress/base-styles": "^3.3.3",
+        "autoprefixer": "^9.8.6",
+        "babel-loader": "^8.1.0",
+        "clean-webpack-plugin": "^3.0.0",
+        "copy-webpack-plugin": "^6.1.0",
+        "css-loader": "^4.2.2",
+        "file-loader": "^6.1.0",
+        "mini-css-extract-plugin": "^0.11.0",
+        "optimize-css-assets-webpack-plugin": "^5.0.4",
+        "postcss-loader": "^3.0.0",
+        "sass": "^1.29.0",
+        "sass-loader": "^10.0.1",
+        "style-loader": "^1.2.1",
+        "svgo": "^1.3.2",
+        "svgo-loader": "^2.2.1",
+        "webpack": "^4.44.1",
+        "webpack-cli": "^3.3.12",
+        "webpack-manifest-plugin": "^3.1.0",
+        "webpack-nano": "^1.1.1"
+    }
+}
