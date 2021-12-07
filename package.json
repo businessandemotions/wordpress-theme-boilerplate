@@ -1,7 +1,7 @@
 {
     "name": "boilerplate",
     "version": "1.0.0",
-    "description": "boilerplate",
+    "description": "A WordPress theme boilerplate by Business & Emotions.",
     "main": "dist/index.js",
     "scripts": {
         "boilerplate": "echo \"Error: no boilerplate specified\" && exit 1",
@@ -37,7 +37,7 @@
         ]
     },
     "peerDependencies": {
-        "jquery": "^3.5.1"
+        "jquery": "*"
     },
     "dependencies": {
         "classlist-polyfill": "^1.2.0",

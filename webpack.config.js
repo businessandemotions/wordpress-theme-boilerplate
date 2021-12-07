@@ -30,12 +30,12 @@ module.exports = {
   module: {
     rules: [
       {
-        boilerplate: /\.js$/,
+        test: /\.js$/,
         exclude: [/node_modules/],
         use: ['babel-loader']
       },
       {
-        boilerplate: /\.(sa|sc|c)ss$/,
+        test: /\.(sa|sc|c)ss$/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
@@ -61,7 +61,7 @@ module.exports = {
         ]
       },
       {
-        boilerplate: /\.svg$/,
+        test: /\.svg$/,
         use: [
           {
             loader: 'file-loader',
@@ -83,7 +83,7 @@ module.exports = {
         ]
       },
       {
-        boilerplate: /\.(gif|png|jpe?g)$/,
+        test: /\.(gif|png|jpe?g)$/,
         use: [
           {
             loader: 'file-loader',
@@ -95,7 +95,7 @@ module.exports = {
         ]
       },
       {
-        boilerplate: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+        test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
         use: [
           {
             loader: 'file-loader',

@@ -28,7 +28,6 @@ function setup() {
 	register_nav_menus(
 		array(
 			'primary_navigation' => __( 'Primary Navigation', 'boilerplate' ),
-			'mobile_navigation'  => __( 'Mobile Navigation', 'boilerplate' ),
 		)
 	);
 
