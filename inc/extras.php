@@ -36,7 +36,7 @@ function body_class( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', __NAMESPACE__ . '\\body_class' );
+add_filter( 'body_class' );
 
 /**
  * Function to allow svg tags in the_content.
@@ -53,7 +53,7 @@ function tinymce_add_pre( $settings ) {
 	}
 	return $settings;
 }
-add_filter( 'tiny_mce_before_init', __NAMESPACE__ . '\\tinymce_add_pre' );
+add_filter( 'tiny_mce_before_init', 'tinymce_add_pre' );
 
 /**
  * Function to add tags like svg tags to allowed kses tags.
@@ -167,7 +167,7 @@ function add_kses_allowed_html( $tags, $context = '' ) {
 	}
 	return $tags;
 }
-add_filter( 'wp_kses_allowed_html', __NAMESPACE__ . '\\add_kses_allowed_html' );
+add_filter( 'wp_kses_allowed_html', 'add_kses_allowed_html' );
 
 function array_to_attr_value( $value, $key ) {
 	switch ( $key ) {
@@ -195,4 +195,4 @@ function array_to_attr_value( $value, $key ) {
 	}
 	return $value;
 }
-add_filter( 'array_to_attr/value', __NAMESPACE__ . '\\array_to_attr_value', 2, 12 );
+add_filter( 'array_to_attr/value', 'array_to_attr_value', 2, 12 );
